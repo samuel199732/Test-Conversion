@@ -1,0 +1,35 @@
+$(document).ready(function(){
+  	$('#servico-2').hide();
+  	$('#servico-3').hide();
+$('#button-one').click(function(event)
+{
+    event.preventDefault(); 
+	$('#button-one').css({'backgroundColor':'#394954'});
+  $('#button-two').css({'backgroundColor':'#ffffff'});
+  $('#button-three').css({'backgroundColor':'#ffffff'});
+  $('#servico-1').show();
+  $('#servico-2').hide();
+  $('#servico-3').hide();
+});
+$('#button-two').click(function(event)
+{
+	event.preventDefault(); 
+  $('#button-two').css({'backgroundColor':'#394954'});
+  $('#button-one').css({'backgroundColor':'#ffffff'});
+  $('#button-three').css({'backgroundColor':'#ffffff'});
+  	$('#servico-1').hide();
+  	$('#servico-2').show();
+  	$('#servico-3').hide();
+});
+$('#button-three').click(function(event)
+{
+	event.preventDefault(); 
+  $('#button-three').css({'backgroundColor':'#394954'});
+  $('#button-one').css({'backgroundColor':'#ffffff'});
+  $('#button-two').css({'backgroundColor':'#ffffff'});
+  	$('#servico-1').hide();
+  	$('#servico-2').hide();
+  	$('#servico-3').show();
+});
+
+});
